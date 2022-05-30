@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from "next/image";
 import styles from '../styles/navbar.module.scss';
 
 const navigation = [
@@ -14,7 +15,7 @@ const Navbar = () => {
     return(
         <nav className={styles.nav}>
             <div className={styles.logo}>
-                WebDev
+                <Image src='/logo.png' height="60" width="60" alt='WebDev'/>
             </div>
             <div className={styles.links}>
                 {
