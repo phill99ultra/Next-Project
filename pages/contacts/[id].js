@@ -25,7 +25,7 @@ const Contact = ({ contact }) => {
   return(
     <>
       <Head>
-        <title>Contact Filip</title>
+        <title>Contact User</title>
       </Head>
       <ContactInfo contact={contact}/>   
     </>
