@@ -1,10 +1,11 @@
+import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '../styles/globals.scss';
 import Layout from '../components/layout';
-import youtubeImg from '../public/preview.png';
+// import youtubeImg from '../public/preview';
 import Image from 'next/image';
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <Head>
@@ -15,13 +16,13 @@ const MyApp = ({ Component, pageProps }) => {
       <main>
         <Component {...pageProps} />
       </main>
-      <Image
+      {/* <Image
         src={youtubeImg}
         width={500}
         height={350}
         alt="preview"
         placeholder='blur'
-      />
+      /> */}
     </Layout>
   )
 }

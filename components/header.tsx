@@ -1,8 +1,8 @@
 import React from 'react';
-import Heading from './heading';
+import { FC } from 'react';
 import Navbar from './navbar';
 
-const Header = () => {
+const Header:FC = () => {
   return(
     <header>
         <Navbar/>  
